@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>NON STOP ACADEMY</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+        <script src="formulario.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <header id="presentacion-organizacion">
+            <!-- Sección de Presentación de la Organización -->
+            <!-- Contenido de la sección de Presentación de la Organización -->
+            <h1>NON STOP ACADEMY</h1>
+            <h2>Cursos intensivos, prácticos y remotos.</h2>
+            <img src="imgs/Programacion.jpeg" style="max-width: 1000px; height: 261px; margin: 0px; width: 464px;" alt="Capacitación constante">
+            <p>Prepárate hoy para los trabajos del futuro.</p> 
+        </header>
+            
+            <!-- Sección de Presentación Personal -->
+        <section id="presentacionpersonal">
+            <!-- Contenido de la sección de Presentación Personal -->
+            <h3>Sobre nosotros</h3>
+            <img class="reunion" src="imgs/Reunion.jpg" style="max-width: 1000px; height: 300px; margin: 20px; width: 415px;" align="left" alt="Gabriel Nathan"> 
+            <p class="nosotros"> Formamos desarrolladores de software a través de una educación de excelencia, con el objetivo de insertarlos laboralmente en el menor tiempo posible. Nuestra academia cuenta con los mejores profesores y con una trayectoria de mas de 15 años, empresas multinacionales de gran renombre nos acreditan y nuestra bolsa de trabajos es una de las mas competitivas en el mercado. Non Stop Academy es la mejor opcion para el que busca desarrollarse de la manera mas rapida y completa, implementando tecnologias de ultima generacion</p>
+            <center>
+            <h4>Colaboradores: </h4>
+            <h5>Gabriel Nathan </h5>
+            <h5>Eugenia Garat</h5>
+            <h5>Yonny Jianlung Liang Liu </h5>
+            </center>
+
+        </section>
+        <h3>CURSOS</h3>
+        <h2 class="curso">Curso HTML, CSS y JS</h2>
+            <p class="curso"> <img class="js" src="imgs/js.png" align="right"> Este curso está diseñado para aquellos que no tienen experiencia previa en programación web. Podrás elegir la cantidad de horas que deseas dedicar al curso, con un mínimo de 10 horas hasta un máximo de 40 horas. Durante este tiempo, aprenderás los conceptos básicos de HTML y cómo estructurar una página web. También se incluyen lecciones sobre cómo dar estilo a una página a través de CSS. Y por ultimo se hablara del lenguaje de programacion Javascript para darle funcionalidad a la pagina web, mediante funciones. Al final del curso, serás capaz de crear una página web completa desde cero y personalizar su diseño con diferentes estilos.</p>
+        <h2 class="curso">Curso Python</h2>
+            <p class="curso"> <img class="js" src="imgs/python.png" align="right">Está diseñado para que aprendas a programar en Python, uno de los lenguajes más populares en la actualidad. El curso es interactivo y práctico, y puedes elegir la cantidad de horas que deseas dedicar, desde un mínimo de 20 hasta un máximo de 60. A lo largo del curso, aprenderás los fundamentos de la programación en Python, incluyendo variables, estructuras de control y programación orientada a objetos, así como temas avanzados como el manejo de excepciones, los módulos y la gestión de archivos. Con este curso, serás capaz de crear programas simples en Python y tendrás una sólida base para profundizar en el lenguaje en el futuro.</p>
+        <h2 class="curso">Curso Java</h2>
+            <p class="curso"> <img class="js" src="imgs/java.png" align="right">Este curso es ideal para aquellos que deseen aprender a programar en Java. Podrás elegir la cantidad de horas que deseas dedicar al curso, con un mínimo de 20 horas hasta un máximo de 60 horas. A lo largo de este tiempo, se te enseñará los fundamentos de programación en Java, incluyendo variables, estructuras de control y programación orientada a objetos. También se cubren conceptos más avanzados como el manejo de excepciones, los hilos de ejecución y la serialización. Al final del curso, estarás capacitado para crear programas simples en Java.</p>
+        <h2 class="curso">Curso C++</h2>
+            <p class="curso"> <img class="js" src="imgs/c++.png" align="right">Este curso es para aquellos que deseen profundizar en la programación y deseen aprender C++. Podrás elegir la cantidad de horas que deseas dedicar al curso, con un mínimo de 30 horas hasta un máximo de 90 horas. Durante este tiempo, aprenderás a programar en C++, desde los conceptos más básicos hasta la implementación de algoritmos y estructuras de datos avanzadas. También se te enseñará cómo diseñar y escribir programas eficientes. Al final del curso, serás capaz de crear programas más complejos en C++.</p>
+        <h2 class="curso">Curso C#</h2>
+            <p class="curso"> <img class="js" src="imgs/cx.png" align="right">Este curso está diseñado para aquellos que deseen aprender a desarrollar aplicaciones en C# utilizando las librerías de .NET. Podrás elegir la cantidad de horas que deseas dedicar al curso, con un mínimo de 40 horas hasta un máximo de 120 horas. Durante este tiempo, se cubren los fundamentos de programación en C# y se te enseñará a crear aplicaciones de escritorio y aplicaciones web. También se incluyen lecciones sobre cómo manejar bases de datos, cómo crear interfaces de usuario y cómo distribuir tus aplicaciones. Al final del curso, estarás capacitado para crear aplicaciones de nivel profesional en C#.</p>
+
+        <!-- Sección de Formulario de Cotización -->
+        <section>
+            <!-- Contenido del formulario de cotización -->
+            <h2>Curso que te interesa</h2>
+            <form id="formularioProceso" method="POST">
+                <label for="Curso">Curso</label>
+                <select id="SelCurso" name="Cursos">
+                    <option value="HTML">HTML, CSS y JS</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="C#">C#</option>
+                    </select>
+                <!-- Agregar otros campos del formulario aquí, por ejemplo, campo de precio y cantidad para la cotización -->
+                
+                <label for="cantidad">Cantidad de horas de cursado</label>
+                <input type="number" id="cantidad" name="cantidad">
+                <button type="submit">Continuar</button>
+            </form>
+        </section>       
+        <p> 
+            <p> 
+                <p> 
+
+                </p>
+            </p>
+        </p> 
+        <!-- Sección de Formulario de Contacto -->
+        <section>
+            <!-- Contenido del formulario de contacto -->
+            <h2>Completa los siguientes datos para ponernos en contacto.</h2>
+            <form id="formularioContacto">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+                <br>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" required>
+                <br>
+                <label for="Email">Email:</label>
+                <input type="Email" id="Email" name="Email" required>
+                <br>
+                <label for="Mensaje">Mensaje:</label>
+                <br>
+                <textarea id="Mensaje" name="Mensaje" required></textarea>
+                <br>
+                <!-- <input type="submit" value="Enviar Formulario"> -->
+                <button type="Enviar Formulario">Enviar Formulario</button>        
+            </form>
+        </section>
+    </body>
+</html>
+<footer class="pie-pagina">
+    <p>Contactenos por estos medios: Email: nonstopacademy@gmail.com Teléfono: +541155554444</p>
+</footer>
